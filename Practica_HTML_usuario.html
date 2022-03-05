@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+</head>
+<style>
+    html, body {
+        margin:0;
+        padding:0;
+        height:100%;
+      }
+      
+      #pagina {
+        position: relative;
+        min-height: 100%;
+      }
+      
+      #contenido {
+        padding-bottom:50px; /* este valor debe ser igual o mayor al alto del pie */
+      }
+      
+      #pie {
+        height:50px;
+        line-height:50px;
+        background:black;
+        color:white;
+        text-align:center;
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+      }
+</style>
+<body>
+<div id="pagina">
+    <div align="center"><img src="../Semana2/sweet-4214168_1280.png" width="50%" height="50%"></div>
+    <h1>Bienvenido a la pastelería</h1>
+    <h3>Catálogo de productos</h3>
+    <table>
+        <tbody>
+            <tr>
+                <th style="border:solid">Pastel</th>
+                <th style="border:solid">Precio</th>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Frutas</td>
+                <td>$350</td>
+            </tr>
+            <tr>
+                <td>Tres leches</td>
+                <td>$350</td>
+            </tr>
+            <tr>
+                <td>Imposible</td>
+                <td>$300</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Adornos para pasteles</h3>
+    <table>
+        <tbody>
+            <tr>
+                <th style="border:solid">Adorno</th>
+                <th style="border:solid">Precio</th>
+            </tr>
+            <tr>
+                <td>Velas</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Set de decoración</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Muñecos</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Mariposas</td>
+                <td>$20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Seleccionar el sabor o combinación de sabores que se desea</h4>
+    <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+    <label for="topping1">Chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Frutas">
+    <label for="topping2">Frutas</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Tres">
+    <label for="topping3">Tres leches</label><br>
+    <input type="checkbox" id="topping4" name="topping4" value="Imposible">
+    <label for="topping3">Imposible</label><br><br>
+
+    <h4>Seleccionar los adornos que quiere</h4>
+    <input type="checkbox" id="thing1" name="thing1" value="Velas">
+    <label for="topping1">Velas</label><br>
+    <input type="checkbox" id="thing2" name="thing2" value="Set de decoracion">
+    <label for="topping2">Set de decoración</label><br>
+    <input type="checkbox" id="thing3" name="thing3" value="Muñecos">
+    <label for="topping3">Muñecos</label><br>
+    <input type="checkbox" id="thing4" name="thing4" value="Mariposas">
+    <label for="topping3">Mariposas</label><br><br>
+
+    <h3>Ingresar sus datos</h3>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="nombre">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="10"><br><br>
+        <label for="correo1">Correo electrónico:</label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <label for="nombre">Descripción general del pastel:</label><br>
+        <textarea name="comentarios" rows="10" cols="40"></textarea><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset">
+    </form>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <div id="pie">
+        Av. Lopez Mateos 423 |
+        Teléfono: 5412312355 |
+        Horarios de atención: 8:00 - 17:00
+    </div>
+</div>
+</body>
+</html>
